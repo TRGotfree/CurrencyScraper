@@ -1,0 +1,32 @@
+{
+  "name": "currencyscraper",
+  "version": "0.0.1",
+  "description": "scraps currency rates from sites of commercial banks of Uzbekistan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TRGotfree/CurrencyScraper.git"
+  },
+  "keywords": [
+    "exchange rate",
+    "currecy rate",
+    "commercial banks",
+    "scrapper"
+  ],
+  "author": "Timur Gazaleyev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TRGotfree/CurrencyScraper/issues"
+  },
+  "homepage": "https://github.com/TRGotfree/CurrencyScraper#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "config": "^3.2.4",
+    "eslint": "^6.7.2",
+    "nightmare": "^3.0.2",
+    "winston": "^3.2.1"
+  }
+}
