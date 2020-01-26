@@ -1,3 +1,6 @@
+
+const connectionString = process.env.CONNECTION_STRING;
+
 class DataBaseRepository {
     save(key, value){
 

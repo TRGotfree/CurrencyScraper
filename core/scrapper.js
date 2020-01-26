@@ -1,3 +1,6 @@
+const nightmare = require("nightmare");
+const cheerio = require("cheerio");
+
 class Scrapper {
     scrap(siteData){
 
