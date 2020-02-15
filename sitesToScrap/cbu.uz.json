@@ -1,0 +1,9 @@
+{
+    "name": "cbu.uz",
+    "url": "http://cbu.uz/ru/arkhiv-kursov-valyut/",
+    "html_tags": [{"path": "", "regex": ""}, {"path": "", "regex": ""}],
+    "waitForObject": "body",
+    "typedInTextField": null,
+    "clickedObject": null,
+    "evaluatedTag": "body"
+ }
