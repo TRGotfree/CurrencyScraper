@@ -7,6 +7,10 @@ let dataDirectoryPath = "";
 class SiteDataProvider {
 
     constructor(sitesDataDirectoryPath) {
+
+        if (!sitesDataDirectoryPath)
+            throw new Error("SiteDataProvider constructor expects \"sitesDataDirectoryPath\" parameter!");
+
         dataDirectoryPath = sitesDataDirectoryPath;
     }
 
@@ -19,10 +23,12 @@ class SiteDataProvider {
 
             const sitesData = [];
 
-            files.forEach(async file => {
-                const fileData = await fileReader(file);
-                sitesData.push(JSON.parse(fileData));
-            });
+            for (let index = 0; index < files.length; index++) {
+                const fileName = files[index];
+                const fullPath = `${dataDirectoryPath}/${fileName}`;
+                const fileData = await fileReader(fullPath);
+                sitesData.push(JSON.parse(fileData.toString("utf8")));
+            }
 
             return sitesData;
 
@@ -47,3 +53,5 @@ class SiteDataProvider {
     }
 
 }
+
+module.exports = SiteDataProvider;
