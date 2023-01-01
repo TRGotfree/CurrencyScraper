@@ -24,7 +24,7 @@
   "homepage": "https://github.com/TRGotfree/CurrencyScraper#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
-    "config": "^3.2.4",
+    "config": "^3.3.8",
     "eslint": "^6.7.2",
     "nightmare": "^3.0.2",
     "winston": "^3.2.1"
